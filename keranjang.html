@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ecovault - Sistem Informasi Layanan Bank Sampah</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="assets/lib/animate/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/lib/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- Navbar & Hero Start -->
+      <div class="container-xxl position-relative p-0">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-custom px-4 px-lg-5 py-3 py-lg-0"
+        >
+          <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0">
+              <i class="fas fa-dumpster me-3"></i>
+              <span class="text-gradient">Eco</span
+              ><span class="text-gradient-white">vault</span>
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+              <a href="index.html" class="nav-item nav-link active">Beranda</a>
+              <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+              <a href="layanan.html" class="nav-item nav-link">Layanan</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Menu Lain</a
+                >
+                <div class="dropdown-menu m-0">
+                  <a href="artikel-1.html" class="dropdown-item">Artikel</a>
+                  <a href="mitra.html" class="dropdown-item">Mitra</a>
+                  <a href="keranjang.html" class="dropdown-item">Pemesanan</a>
+                  <a href="riwayat.html" class="dropdown-item">Riwayat</a>
+                </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Kontak Kami</a>
+            </div>
+            <a
+              href="authentication.html"
+              class="btn btn-primary btn-custom py-2 px-4"
+              >Login</a
+            >
+          </div>
+        </nav>
+
+        <div
+          class="container-xxl py-5 bg-dark hero-header-custom mb-5 hero-bg-custom"
+        >
+          <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">
+              Pemesanan
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li
+                  class="breadcrumb-item text-white active custom-text-about"
+                  aria-current="page"
+                >
+                  Pemesanan
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar & Hero End -->
+
+      <!-- cart -->
+      <div class="cart-section mt-150 mb-150">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12">
+              <div class="cart-table-wrap">
+                <table class="cart-table">
+                  <thead class="cart-table-head">
+                    <tr class="table-head-row">
+                      <th class="product-remove"></th>
+                      <th class="product-name">Nama Layanan</th>
+                      <th class="product-name">Deskripsi Layanan</th>
+                      <th class="product-total">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-body-row">
+                      <td class="product-remove">
+                        <a href="#"
+                          ><i
+                            class="far fa-window-close"
+                            style="color: #033c3d"
+                          ></i
+                        ></a>
+                      </td>
+                      <td class="product-name">Pick Up and Sorting</td>
+                      <td class="product-name">
+                        Layanan ini mencakup penjemputan sampah dari rumah,
+                        bisnis, atau acara, serta penyortiran sampah menjadi
+                        berbagai kategori (organik dan anorganik). Sampah yang
+                        disortir kemudian dapat dikonversi menjadi e-money atau
+                        tunai bagi pengguna.
+                      </td>
+                      <td class="product-total">1</td>
+                    </tr>
+                    <tr class="table-body-row">
+                      <td class="product-remove">
+                        <a href="#"
+                          ><i
+                            class="far fa-window-close"
+                            style="color: #033c3d"
+                          ></i
+                        ></a>
+                      </td>
+                      <td class="product-name">Bisnis dan Event</td>
+                      <td class="product-name">
+                        Layanan ini dirancang untuk memenuhi kebutuhan spesifik
+                        bisnis dan acara besar.
+                      </td>
+                      <td class="product-total">1</td>
+                    </tr>
+                    <tr class="table-body-row">
+                      <td class="product-remove">
+                        <a href="#"
+                          ><i
+                            class="far fa-window-close"
+                            style="color: #033c3d"
+                          ></i
+                        ></a>
+                      </td>
+                      <td class="product-name">Edukasi dan Pelatihan</td>
+                      <td class="product-name">
+                        Layanan Edukasi dan Pelatihan kami menyediakan solusi
+                        komprehensif untuk meningkatkan kesadaran dan
+                        pengetahuan tentang lingkungan.
+                      </td>
+                      <td class="product-total">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="total-section">
+                <table class="total-table">
+                  <thead class="total-table-head">
+                    <tr class="table-total-row">
+                      <th>Total</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="total-data">
+                      <td><strong>Layanan: </strong></td>
+                      <td>3</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="cart-buttons">
+                  <a
+                    href="#"
+                    class="boxed-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#serviceModal"
+                    >Tambah Layanan</a
+                  >
+                  <a href="checkout.html" class="boxed-btn black">Check Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cart -->
+
+      <!-- Modal for Adding Services -->
+      <div
+        class="modal fade"
+        id="serviceModal"
+        tabindex="-1"
+        aria-labelledby="serviceModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="serviceModalLabel">Tambah Layanan</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action"
+                  data-id="1"
+                  data-name="Pick Up and Sorting"
+                  data-description="Layanan ini mencakup penjemputan sampah dari rumah, bisnis, atau acara, serta penyortiran sampah menjadi berbagai kategori (organik dan anorganik). Sampah yang disortir kemudian dapat dikonversi menjadi e-money atau tunai bagi pengguna."
+                  >Pick Up and Sorting</a
+                >
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action"
+                  data-id="2"
+                  data-name="Bisnis dan Event"
+                  data-description="Layanan ini dirancang untuk memenuhi kebutuhan spesifik bisnis dan acara besar."
+                  >Bisnis dan Event</a
+                >
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action"
+                  data-id="3"
+                  data-name="Edukasi dan Pelatihan"
+                  data-description="Layanan Edukasi dan Pelatihan kami menyediakan solusi komprehensif untuk meningkatkan kesadaran dan pengetahuan tentang lingkungan."
+                  >Pusat Daur Ulang</a
+                >
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action"
+                  data-id="4"
+                  data-name="Layanan Komunitas"
+                  data-description="Layanan ini berfokus pada pemberdayaan komunitas melalui program daur ulang dan manajemen sampah yang berkelanjutan."
+                  >Edukasi dan Pelatihan</a
+                >
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn custom-footer"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <img src="assets/img/logo-footer.png" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4 custom-title-footer"
+              >
+                Ecovault
+              </h4>
+              <a class="btn btn-link" href="index.html">Beranda</a>
+              <a class="btn btn-link" href="about.html">Tentang Kami</a>
+              <a class="btn btn-link" href="layanan.html">Layanan</a>
+              <a class="btn btn-link" href="contact.html">Kontak Kami</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4 custom-title-footer"
+              >
+                Alamat
+              </h4>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Jl. Airlangga No.4 - 6,
+                Airlangga, Kec. Gubeng, Surabaya, Jawa Timur 60115
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>(031) 5912564
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>ecovault@gmail.com
+              </p>
+              <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4 custom-title-footer"
+              >
+                Jam Layanan
+              </h4>
+              <h5 class="text-light fw-normal">Senin - Sabtu</h5>
+              <p>09.00 - 21.00</p>
+              <h5 class="text-light fw-normal">Minggu</h5>
+              <p>10.00 - 20.00</p>
+              <h5 class="text-light fw-normal">Layanan Edukasi</h5>
+              <p>Setiap Hari</p>
+              <p>08.00 - 15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">Ecovault</a>, All Right
+                Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-success btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+    <!-- JavaScript for Adding Service to Cart -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Dapatkan semua elemen layanan di modal
+        var serviceItems = document.querySelectorAll(
+          "#serviceModal .list-group-item"
+        );
+
+        // Iterasi melalui setiap layanan dan tambahkan event listener
+        serviceItems.forEach(function (item) {
+          item.addEventListener("click", function (event) {
+            event.preventDefault(); // Mencegah link default behavior
+
+            // Ambil data layanan
+            var serviceId = this.getAttribute("data-id");
+            var serviceName = this.getAttribute("data-name");
+            var serviceDescription = this.getAttribute("data-description");
+
+            // Tambahkan layanan ke keranjang
+            addToCart(serviceId, serviceName, serviceDescription);
+          });
+        });
+
+        function addToCart(id, name, description) {
+          // Dapatkan tabel keranjang
+          var cartTable = document.querySelector(".cart-table tbody");
+
+          // Periksa apakah layanan sudah ada di keranjang
+          var existingRow = cartTable.querySelector('[data-id="' + id + '"]');
+
+          if (existingRow) {
+            // Jika sudah ada, tambahkan kuantitas
+            var quantityCell = existingRow.querySelector(".product-total");
+            var currentQuantity = parseInt(quantityCell.textContent, 10);
+            quantityCell.textContent = currentQuantity + 1;
+          } else {
+            // Jika tidak ada, tambahkan baris baru
+            var newRow = document.createElement("tr");
+            newRow.classList.add("table-body-row");
+            newRow.setAttribute("data-id", id);
+
+            newRow.innerHTML = `
+                    <td class="product-remove">
+                        <a href="#" class="remove-service"><i class="far fa-window-close" style="color: #033c3d"></i></a>
+                    </td>
+                    <td class="product-name">${name}</td>
+                    <td class="product-name">${description}</td>
+                    <td class="product-total">1</td>
+                `;
+
+            cartTable.appendChild(newRow);
+          }
+
+          // Perbarui total layanan
+          updateTotalServices();
+        }
+
+        function updateTotalServices() {
+          var totalCell = document.querySelector(".total-data td:last-child");
+          var totalServices = document.querySelectorAll(
+            ".cart-table tbody tr"
+          ).length;
+          totalCell.textContent = totalServices;
+        }
+
+        // Event listener untuk menghapus layanan dari keranjang
+        document
+          .querySelector(".cart-table")
+          .addEventListener("click", function (event) {
+            if (event.target.closest(".remove-service")) {
+              event.preventDefault();
+              var row = event.target.closest("tr");
+              row.remove();
+              updateTotalServices();
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
